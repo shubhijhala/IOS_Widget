@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/llEvent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/cvWidgetLoc"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_0"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PlaceHolder"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14°C"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/black"
+                android:src="@drawable/white_cloud"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Cloudy and windy at times with rain early  H°10 L:10° "
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

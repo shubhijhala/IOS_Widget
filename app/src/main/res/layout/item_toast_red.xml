@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ripple_red_toast"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thanks_for_selecting_widget_n_please_wait"
+            android:layout_weight="9"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_close"/>
+
+    </LinearLayout>
+
+</LinearLayout>

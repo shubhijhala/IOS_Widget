@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:id="@+id/llSmallcal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:id="@+id/cvWidget"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_0">
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/tvMonth"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="JAN"
+           android:textSize="12sp"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/black"
+           android:layout_marginEnd="10dp"
+          android:gravity="end"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:spanCount="7"
+            tools:itemCount="30"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_small_calender"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

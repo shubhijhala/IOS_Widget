@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/llSmallcal"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <LinearLayout
+            android:id="@+id/cvWidget3"
+           android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_0">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/init_text_color"
+                android:textSize="60sp"
+                android:text="14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JAN"
+                    android:textSize="12sp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="end"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCalender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:spanCount="7"
+                    tools:itemCount="30"
+                    android:layout_margin="5dp"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    tools:listitem="@layout/item_medium_calender"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

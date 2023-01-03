@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">IOS Widget</string>
+    <string name="add_small_widget">Add Small Widget</string>
+    <string name="add_medium_widget">Add Medium Widget</string>
+    <string name="add_large_widget">Add Large Widget</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="calendar">Calendar</string>
+    <string name="clock">Clock</string>
+    <string name="day_counter">Day Counter</string>
+    <string name="weather">Weather</string>
+    <string name="photo_widget">Photo Widget</string>
+    <string name="skip">Skip</string>
+    <string name="small_widget">Small Widget</string>
+    <string name="small_widget_desc">Choose small widget with edit.</string>
+    <string name="medium_widget">Medium Widget</string>
+    <string name="medium_widget_desc">Choose medium widget with edit.</string>
+    <string name="large_widget">Large Widget</string>
+    <string name="large_widget_desc">Choose large widget with edit.</string>
+    <string name="battery">Battery</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="font_1">fonts/alex_brush_regular.ttf</string>
+    <string name="font_2">fonts/caviar_dreams_regular.ttf</string>
+    <string name="font_3">fonts/great_vibes_regular.otf</string>
+    <string name="font_4">fonts/lobster_regular.otf</string>
+    <string name="font_5">fonts/open_sans_regular.ttf</string>
+    <string name="font_6">fonts/pacifico_regular.ttf</string>
+    <string name="font_7">fonts/raleway_regular.ttf</string>
+    <string name="font_8">fonts/roboto_regular.ttf</string>
+    <string name="font_9">fonts/walkway_oblique_regular.ttf</string>
+    <string name="abc">Abc</string>
+    <string name="background">Background</string>
+    <string name="text">Text</string>
+    <string name="font">Font</string>
+    <string name="apply">Apply</string>
+    <string name="date">Date</string>
+    <string name="event">Event</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="play_music_from_any_apps_and_control_here">Play music from any apps and control here!!</string>
+    <string name="cloudy_and_windy_at_times_with_rain_early">Cloudy and windy at times with rain early  H°10 L:10° . </string>
+    <string name="everybody_is_a_second_chance">EveryBody is a second chance</string>
+    <string name="app_id">ca-app-pub-4884160394877152~3550640920</string>
+    <string name="bannerid">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="thanks_for_selecting_widget_n_please_wait">Thanks for selecting widget!! \n Please Wait ....</string>
+    <item name="banner_id" type="string">ca-app-pub-3940256099942544/6300978111</item>
+    <item name="interstitial_id" type="string">ca-app-pub-3940256099942544/1033173712</item>
+    <item name="app_open_id" type="string">ca-app-pub-3940256099942544/3419835294</item>
+    <item name="native_id" type="string">ca-app-pub-3940256099942544/2247696110</item>
+    <item name="reward_id" type="string">ca-app-pub-3940256099942544/5224354917</item>
+</resources>

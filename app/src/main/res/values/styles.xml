@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="Widget.IOSWidget.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.IOSWidget.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="DialogCustomTheme" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+
+    </style>
+</resources>

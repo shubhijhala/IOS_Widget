@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/cvWidgetBg"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_0"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ProgressBar
+                android:id="@+id/pbBattery"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:indeterminateOnly="false"
+                android:progress="40"
+                android:progressDrawable="@drawable/custom_battery_progress"
+                android:rotation="270"/>
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/pbBattery"
+                android:layout_alignTop="@+id/pbBattery"
+                android:layout_alignEnd="@+id/pbBattery"
+                android:layout_alignBottom="@+id/pbBattery"
+                android:padding="15dp"
+                android:src="@drawable/ic_iphone" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pbBattery"
+                android:layout_marginStart="10dp"
+                android:text="41%"
+                android:textColor="@color/init_text_color"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

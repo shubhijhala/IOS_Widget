@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.categoryWidgetList.CategoryWidgetListActivity">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/activity_header"/>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout android:visibility="gone"
+                    android:id="@+id/llSmallWidget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <include
+                            android:id="@+id/wgtBattery"
+                            layout="@layout/layout_battery"/>
+
+                        <include
+                            android:id="@+id/wgtTime"
+                            layout="@layout/layout_time"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <include
+                            android:id="@+id/wgtDate"
+                            layout="@layout/layout_date"/>
+
+                        <include
+                            android:id="@+id/wgtEvent"
+                            layout="@layout/layout_event"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <include
+                            android:id="@+id/wgtYourText"
+                            layout="@layout/layout_your_text"/>
+
+                        <include
+                            android:id="@+id/musiclayout"
+                            layout="@layout/layout_for_music"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="start"
+                        android:weightSum="2">
+
+                        <include
+                            android:id="@+id/smallcal"
+                            layout="@layout/small_calendar_layout"/>
+
+                        <include
+                            android:id="@+id/smallcal2"
+                            layout="@layout/simple_location_layout"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="start"
+                        android:weightSum="2">
+
+                        <include
+                            android:id="@+id/smallclock"
+                            layout="@layout/layout_clock_2"/>
+
+                        <include
+                            android:id="@+id/smallquote"
+                            layout="@layout/layout_quote"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="start"
+                        android:weightSum="2">
+
+                        <include
+                            android:id="@+id/smallPhoto"
+                            layout="@layout/layout_image"/>
+
+                        <include
+                            android:id="@+id/smallquote2"
+                            android:visibility="invisible"
+                            layout="@layout/layout_quote"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:visibility="gone"
+                    android:id="@+id/llMediumWidget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/wgtMediumTime"
+                        layout="@layout/layout_medium_time"/>
+
+                    <include
+                        android:id="@+id/wgtMediumDate"
+                        layout="@layout/medium_calender_layout"/>
+
+                    <include
+                        android:id="@+id/mediumMusic"
+                        layout="@layout/medium_music_layout"/>
+
+                    <include
+                        android:id="@+id/mediumLoc"
+                        layout="@layout/medium_location_layout"/>
+
+                    <include
+                        android:id="@+id/mediumclock"
+                        layout="@layout/medium_watch_layout"/>
+
+                </LinearLayout>
+
+              <LinearLayout android:visibility="gone"
+                        android:id="@+id/llLargeWidget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/wgtLargeDateTime"
+                            layout="@layout/layout_large_date_time"/>
+
+                        <include
+                            android:id="@+id/wgtCalender"
+                            layout="@layout/large_calender_layout"/>
+
+                        <include
+                            android:id="@+id/wgtLoc"
+                            layout="@layout/large_location_layout"/>
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

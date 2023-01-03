@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.mainActivity.MainActivity">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@color/background"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/tvHeaderLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeaderName"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWidgetList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:clipToPadding="false"
+            android:paddingBottom="10dp"
+            android:overScrollMode="never"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tvHeaderLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbOpenBottomSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_add"
+            android:tint="@color/white"
+            android:background="@color/purple_700"
+            android:contentDescription="@string/add_small_widget"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

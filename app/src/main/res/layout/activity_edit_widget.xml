@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout"
+        tools:context=".ui.editWidget.EditWidgetActivity"
+        android:background="@color/white">
+
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/activity_header"/>
+
+        <com.app.customwidget.view.SquareLinearlayoutView
+            android:id="@+id/llEditWidget"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header">
+
+            <ViewStub
+                android:id="@+id/vsWidget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.app.customwidget.view.SquareLinearlayoutView>
+
+        <RadioGroup
+            android:id="@+id/rgEditSelection"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/radio_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llEditWidget">
+
+            <RadioButton
+                android:id="@+id/rbBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_flat_selector"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="@string/background"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rbText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_flat_selector"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="@string/text"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rbFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_flat_selector"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="@string/font"
+                android:textColor="@color/white"/>
+
+        </RadioGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBackground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/btApply"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgEditSelection"
+            app:spanCount="4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/btApply"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgEditSelection"
+            app:spanCount="4" />
+
+        <androidx.recyclerview.widget.RecyclerView android:visibility="gone"
+            android:id="@+id/rvFont"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/btApply"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgEditSelection"
+            app:spanCount="4" />
+
+        <Button
+            android:id="@+id/btApply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:background="@drawable/bg_button"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

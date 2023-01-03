@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="0PM"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/black"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/white_cloud"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="0°C"
+
+        />
+</LinearLayout>
+</layout>
